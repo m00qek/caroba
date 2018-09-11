@@ -1,0 +1,12 @@
+watchers:
+ - extension: go
+   tasks:
+   - command: "make build-webserver"
+
+ - extension: elm
+   tasks:
+   - command: "make build-js"
+
+ - extension: css
+   tasks:
+   - command: "make build-assets"
