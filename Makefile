@@ -9,7 +9,8 @@ prepare:
 
 build-webserver:
 	@mkdir -p release
-	@go build -o release/caroba-webserver webserver/src/main.go
+	@go build -o release/caroba-webserver webserver/*.go
+	@cp webserver/diceware release -rf
 
 build-assets:
 	@cp connection-assistant/assets release -rf
